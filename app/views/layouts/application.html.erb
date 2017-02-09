@@ -9,14 +9,17 @@
 
   <body>
     <%= render 'layouts/header' %>
-    <div class="container">
-      <% flash.each do |type, msg| %>
-        <%= content_tag(:div, msg, class: "alert alert-#{type}") %>
-      <% end %>
-      <%= yield %>
-      <%= render 'layouts/footer' %>
-      <%= debug(params) if Rails.env.development? %>
-    </div>
+      
+      <div class="container">
+        <%= render 'layouts/sidebar' %>
+          
+        <div class="main-content">  <!--col-md-9-->
+            <% flash.each do |type, msg| %>
+              <%= content_tag(:div, msg, class: "alert alert-#{type}") %>
+            <% end %>
+            <%= yield %>
+        </div>
+      <!--</div>-->
   </body>
 </html>
 

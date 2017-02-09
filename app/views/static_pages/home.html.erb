@@ -1,11 +1,79 @@
-<div class="center jumbotron">
-    <h1>Welcome to the Sample App</h1>
+<!--<div class="center jumbotron">-->
+<!--    <h1>Welcome to the Sample App</h1>-->
     
-    <h2>
-        This is the home page for the <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a> sample application.
-    </h2>
+<!--    <h2>-->
+<!--        This is the home page for the <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a> sample application.-->
+<!--    </h2>-->
     
-    <%= link_to "Sign up now!", signup_path, class: 'btn btn-lg btn-primary' %>
+<!--    <%= link_to "Sign up now!", signup_path, class: 'btn btn-lg btn-primary' %>-->
+<!--</div>-->
+
+<!--<%= link_to image_tag('rails.png', alt: 'Rails logo'), 'http://rubyonrails.org/' %>-->
+
+<h1>Dashboard</h1>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">My Budget</h3>
+  </div>
+  <div class="panel-body">
+    <table class="table table-hover">
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+            <td>Data 3</td>
+        </tr>
+        <tr>
+            <td>Data 4</td>
+            <td>Data 5</td>
+            <td>Data 6</td>
+        </tr>
+        <tr>
+            <td>Data 7</td>
+            <td>Data 8</td>
+            <td>Data 9</td>
+        </tr>
+        <tr>
+            <td>Total 1</td>
+            <td>Total 2</td>
+            <td>Total 3</td>
+        </tr>
+    </table>
+  </div>
+  <div class="panel-footer text-right">
+      <%= link_to 'see more...', help_path %>
+  </div>
 </div>
 
-<%= link_to image_tag('rails.png', alt: 'Rails logo'), 'http://rubyonrails.org/' %>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">My Incomes</h3>
+  </div>
+  <div class="panel-body">
+    <table class="table table-hover">
+        <tr>
+            <th>Employer</th>
+            <th>Pay</th>
+            <th>Frequency</th>
+        </tr>
+        <tr>
+            <td>ATO</td>
+            <td>$1,500.00</td>
+            <td>Fortnight</td>
+        </tr>
+        <tr>
+            <td>Library</td>
+            <td>$1,104.19</td>
+            <td>Month</td>
+        </tr>
+        <tr>
+            <td>Downer</td>
+            <td>$0.00</td>
+            <td>Like, ever</td>
+        </tr>
+    </table>
+  </div>
+  <div class="panel-footer  text-right">
+      <%= link_to 'see more...', about_path %>
+  </div>
+</div>
