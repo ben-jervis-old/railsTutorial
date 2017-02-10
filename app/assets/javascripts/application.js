@@ -15,3 +15,10 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+// $(document).ready(function() {
+//     $("#menu-expand-button").click(function(e) {
+//         $("#side-bar-links").animate({width:'toggle'},350);
+//     });
+// });
+

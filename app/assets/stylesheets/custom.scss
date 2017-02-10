@@ -254,6 +254,18 @@ table.table-hover {
     }
 }
 
+.navbar-link-text {
+    display: none;
+}
+
+// #menu-expand-button {
+//     display: flex;
+//     float: right;
+//     // line-height: 50px;
+//     height: 35px;
+//     margin-top: auto;
+//     margin-bottom: auto;
+// }
 @media (max-width: 768px) {
     .sidebar-nav {
         display: none;
@@ -263,5 +275,8 @@ table.table-hover {
     }
     #logo {
         padding-left: 15px;
+    }
+    .navbar-link-text {
+        display: inline-block;
     }
 }
